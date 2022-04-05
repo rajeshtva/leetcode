@@ -1,3 +1,15 @@
+two-pointer problem. 
+
+solution: 
+
+maintain two pointers, one for left end and another for right end. 
+approach: 
+    - Travese till temp->next not become null,
+    - in that 
+        - for k - 1 time, change left's value to its next pointer,
+        - for rest, change right's value to its next.
+
+```cpp
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -51,3 +63,4 @@ public:
         return head;
     }
 };
+```
