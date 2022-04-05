@@ -6,8 +6,10 @@
 **Time**: 56ms(<41.05%)
 
 **Explanation**:
-`find`: this method finds an elmeent in the vector and returns iterator to that element, and end pointer if not found,
-`distance`: this method finds the index difference between two iterators of vector.
+`find()`: this method finds an elmeent in the vector and returns iterator to that element, and end pointer if not found,
+`distance()`: this method finds the index difference between two iterators of vector.
+
+in `nums.begin()+i+1`, 1 is added to skip the same element for which we are trying to find pair.(as per question)
 
 **Space complexity**: O(n^2)
 **time complexity**: O(1)
@@ -35,7 +37,4 @@ public:
         return ans;
     }
 };
-
-
-
 ```
