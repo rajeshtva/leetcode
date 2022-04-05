@@ -27,6 +27,9 @@ public:
 time compleixty: O(n)
 space complexity: O(1)
 
+RunTime: 172ms(14.22%)
+Memory Usage: 59mb(>81.47%)
+
 Approach:
 we can't store more water than minimum of both sides.
 reduce whichever side is smaller.
