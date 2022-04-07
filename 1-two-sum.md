@@ -1,8 +1,8 @@
 # Two Sum
 
 [link](https://leetcode.com/problems/two-sum/)
-**Level**: Easy
-**Memory Use**: 10.1mb(<94.81%)
+**Level**: Easy  
+**Memory Use**: 10.1mb(<94.81%)  
 **Time**: 56ms(<41.05%)
 
 **Explanation**:
