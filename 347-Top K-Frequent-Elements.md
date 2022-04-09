@@ -1,4 +1,12 @@
+## Tok K Frequest Elements. 
+
+[link](https://leetcode.com/problems/top-k-frequent-elements/)
+
+
+
 #### Naive solution:
+**Time taken:** 27ms
+**Space complexity:**13.9mb
 
 ```cpp
 bool cmpFunction(pair<int, int>& a, pair<int, int>& b)
@@ -39,7 +47,8 @@ public:
 ```
 
 #### 2. using hash map and priority queue(minHeap)
-
+**Time taken:** 12ms
+**Space complexity:**13.7mb
 ```cpp
 typedef pair<int, int> T;
 
