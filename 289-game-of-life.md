@@ -136,3 +136,70 @@ public:
     }
 };
 ```
+
+##### 3. Brute force approach
+```cpp
+class Solution {
+public:
+    void gameOfLife(vector<vector<int>>& board) 
+    {
+		// size of matrix (m * n)
+        int m = board.size(), n = board[0].size(), cnt;
+		// temporary matrix of size (m * n)
+        vector<vector<int>> ans(m, vector<int> (n));
+		// storing current state in temp matrix
+        for(int i = 0; i < m; i++)
+        {
+            for(int j = 0; j < n; j++)
+                ans[i][j] = board[i][j];
+        }
+		// X & Y vectors are used to find the neighbours of current cell
+		// 8 neighbours + 1 current will be visited using X & Y vectors.
+		// [i - 1, j - 1][i - 1, j + 0][i - 1, j + 1][i + 0, j - 1][i + 0, j + 0][i + 0, j + 1][i + 1, j - 1][i + 1, j + 0][i + 1, j + 1]
+        vector<int> X{-1, 0, 1}, Y{-1, 0, 1};
+		// Iterating over board
+        for(int i = 0; i < m; i++)
+        {
+            for(int j = 0; j < n; j++)
+            {
+				// cnt is used to count no. of neighbours with value 1.
+                cnt = 0;
+				// if current index already has 1 subtracting that from count of neighbours with 1
+				// while counting with X & Y we counted current cell if it has 1 so decrementing cnt.
+                if(board[i][j] == 1)
+                    cnt--;
+                for(auto x : X)
+                {
+                    for(auto y : Y)
+                    {
+						// checking if we are not going out of bound.
+                        if(i + x >= 0 && j + y >= 0 && i + x <= m - 1 && j + y <= n - 1)
+                        {
+							// if not & if cell contain 1 then increment count.
+                            if(board[i + x][j + y] == 1)
+                                cnt++;
+                        }
+                    }
+                }
+				// if live neighbors are less than 2 current cell dies.
+                if(cnt < 2)
+                    ans[i][j] = 0;
+				// if live neighbours are exactly 3 than cell becomes alive.
+                else if(cnt == 3)
+                    ans[i][j] = 1;
+				// if live neighbours are more than 3 than current cell dies due to overpopulation.
+                else if(cnt > 3)
+                    ans[i][j] = 0;
+            }
+        }
+		// storing ans back to board.
+        for(int i = 0; i < m; i++)
+        {
+            for(int j = 0; j < n; j++)
+                board[i][j] = ans[i][j];
+        } 
+    }
+};
+
+image
+```
