@@ -26,7 +26,6 @@
 
         return cnt;
     }
-
 ```
 
 **Space complexity**: $O(n^2)$ 
