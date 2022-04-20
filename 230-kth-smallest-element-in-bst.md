@@ -1,7 +1,7 @@
 # 
 
 [link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
-**Level**: Easy 
+**Level**: medium 
 
 **Memory Use**:  24.2 MB
 
