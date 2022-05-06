@@ -3,7 +3,8 @@
         "*.html": "html",
         "*.vue": "vue",
         "vector": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "new": "cpp"
     },
     // "C_Cpp.errorSquiggles": "Disabled",
 }
