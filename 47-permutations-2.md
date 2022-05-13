@@ -1,18 +1,15 @@
-#
+# Permutations 2
 
-[link]()
-**Level**: Easy
+[link](https://leetcode.com/problems/permutations-ii/submissions/)
+**Level**: Medium
 
-**Memory Use**: 19.8 MB
+**Memory Use**: 9.1 MB
 
-**Time**: 36 ms
+**Time**: 7ms ms
 
 **Explanation**:
 
 - use hashmap to store unique numbers.
-
-**Space complexity**: $O(1)$
-**time complexity**: $O(n.log(k))$, for storing the element, $O(1)$ for getting top element.
 
 ```cpp
 class Solution {
