@@ -1,20 +1,20 @@
 # 
 
 [link]()
-**Level**: Easy 
+**Level**: Medium 
 
-**Memory Use**:  19.8 MB
+**Memory Use**:   MB
 
-**Time**: 36 ms
+**Time**:  ms
 
 **Explanation**:
-
 - 
 
 **Space complexity**: $O(1)$
-**time complexity**: $O(n.log(k))$, for storing the element, $O(1)$ for getting top element.
+**time complexity**: $O(n)$
 
 ```cpp
+
 
 ```
 
