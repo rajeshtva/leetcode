@@ -6,42 +6,50 @@ using namespace std;
 
 class Solution {
 public:
-    int nextGreaterElement(int n)
+    vector<vector<int>> getSkyline(vector<vector<int>>& buildings)
     {
-        string num = to_string(n);
-        map<char, int> chart;
-        int i;
+        vector<vector<int>> result;
+        vector<vector<int>> points;
 
-        for (i = num.size() - 1; i >= 0; i--) {
-            if (i + 1 < n && num[i] < num[i + 1])
-                break;
+        trasformBuilding(buildings, points);
 
-            if (chart[num[i]] == 0)
-                chart[num[i]] = i;
-        }
+        sort(points.begin(), points.end(), [](const vector<int>& a, vector<int>& b) {
+            return (a[0] == b[0]) ? (a[1] < b[1]) : (a[0] < b[0]);
+        });
 
-        if (i < 0) // first base case. the number is already greatest.
-            return -1;
+        map<int, int> mp;
+        mp[0] = 1;
 
-        pair<char, int> d;
-        for (auto& s : chart) {
-            if (s.first > num[i]) {
-                d = s;
-                break;
+        int previousHeight = 0;
+
+        for (auto& p : points) {
+            // put in queue
+            if (p[1] < 0) {
+                mp[-p[1]]++;
+            } else {
+                // if height is +ve, the pop that element.
+                mp[p[1]]--;
+                if (mp[p[1]] == 0) {
+                    mp.erase(p[1]);
+                }
             }
+
+            if (previousHeight != mp.rbegin()->first) {
+                result.push_back({ p[0], mp.rbegin()->first });
+                previousHeight = mp.rbegin()->first;
+            }
+            // put in answer, the current x,y ,
         }
 
-        swap(num[d.second], num[i]);
+        return result;
+    }
 
-        reverse(num.begin() + i + 1, num.end());
-        int ans;
-        try {
-            ans = stoi(num);
-        } catch (const std::out_of_range& e) {
-            ans = -1;
+    void trasformBuilding(vector<vector<int>>& buildings, vector<vector<int>>& points)
+    { // negate the point of beginingn
+        for (auto& i : buildings) {
+            points.push_back({ i[0], -i[2] }); // starting index.
+            points.push_back({ i[1], i[2] }); // ending index.
         }
-
-        return ans;
     }
 };
 /**
@@ -60,13 +68,16 @@ int main()
     cin >> t;
 
     while (t--) {
-        int n;
+        string s;
+        cin >> s;
+        int target;
+        cin >> target;
 
-        cin >> n;
+        auto input = deserialise2dMatrix<int>(s, 3);
 
-        auto o = solution.nextGreaterElement(n);
+        auto output = solution.getSkyline(input);
 
-        cout << o;
+        print2dMatrix<int>(output);
 
         cout << endl;
     }

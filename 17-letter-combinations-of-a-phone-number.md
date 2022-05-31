@@ -54,3 +54,37 @@ public:
     }
 };
 ```
+
+## 2.nd approach
+uses less ram and answers only in one iteration. for explanation: [visit this link: striver's video](https://www.youtube.com/watch?v=jC_cWLy7jSI)
+```cpp
+class Solution {
+public:
+    int largestRectangleArea(vector<int>& heights)
+    {
+        int area = 0;
+        int n = heights.size();
+
+        stack<int> st;
+
+        for (int i = 0; i <= n; i++) {
+            while (!st.empty() && (i == n || heights[i] <= heights[st.top()])) {
+                int h = heights[st.top()];
+                st.pop();
+                int w;
+
+                if (st.empty())
+                    w = i;
+                else
+                    w = i - st.top() - 1;
+
+                area = max(area, h * w);
+            }
+
+            st.push(i);
+        }
+
+        return area;
+    }
+};
+```
