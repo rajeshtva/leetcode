@@ -4,56 +4,83 @@
  */
 using namespace std;
 
+// class Solution {
+// public:
+//     string longestPalindrome(string s)
+//     {
+//         int n = s.size();
+
+//         int start, end, maxLength = INT_MIN;
+
+//         vector<vector<int>> cache(n, vector<int>(n, -1));
+
+//         for (int i = n - 1; i >= 0; i--) {
+//             for (int j = n - 1; j >= i; j--) {
+//                 if (i == j) {
+//                     cache[i][j] = 1;
+//                 } else if (s[i] == s[j]) {
+//                     if (cache[i + 1][j - 1] == -1)
+//                         cache[i][j] = 2;
+//                     else if (cache[i + 1][j - 1] != 0)
+//                         cache[i][j] = cache[i + 1][j - 1] + 2;
+//                     else
+//                         cache[i][j] = 0;
+//                 } else {
+//                     cache[i][j] = 0;
+//                 }
+
+//                 if (maxLength != max(maxLength, cache[i][j])) {
+//                     start = i;
+//                     end = j;
+//                     maxLength = cache[i][j];
+//                 }
+//             }
+//         }
+
+//         return s.substr(start, end - start + 1);
+//     }
+// };
+
 class Solution {
 public:
-    vector<vector<int>> getSkyline(vector<vector<int>>& buildings)
+    string longestPalindrome(string s)
     {
-        vector<vector<int>> result;
-        vector<vector<int>> points;
+        int n = s.size(), count = 0, left, right, maxLength = INT_MIN, start, end;
 
-        trasformBuilding(buildings, points);
+        for (int i = 0; i < n; i++) {
+            left = right = i;
 
-        sort(points.begin(), points.end(), [](const vector<int>& a, vector<int>& b) {
-            return (a[0] == b[0]) ? (a[1] < b[1]) : (a[0] < b[0]);
-        });
-
-        map<int, int> mp;
-        mp[0] = 1;
-
-        int previousHeight = 0;
-
-        for (auto& p : points) {
-            // put in queue
-            if (p[1] < 0) {
-                mp[-p[1]]++;
-            } else {
-                // if height is +ve, the pop that element.
-                mp[p[1]]--;
-                if (mp[p[1]] == 0) {
-                    mp.erase(p[1]);
+            while (0 <= left && right < n && s[left] == s[right]) {
+                if (maxLength < right - left + 1) {
+                    start = left;
+                    end = right;
+                    maxLength = right - left + 1;
                 }
+                left--;
+                right++;
+                count++;
             }
 
-            if (previousHeight != mp.rbegin()->first) {
-                result.push_back({ p[0], mp.rbegin()->first });
-                previousHeight = mp.rbegin()->first;
+            left = i;
+            right = i + 1;
+
+            while (0 <= left && right < n && s[left] == s[right]) {
+                if (maxLength < right - left + 1) {
+                    start = left;
+                    end = right;
+                    maxLength = right - left + 1;
+                }
+                left--;
+                right++;
+                count++;
             }
-            // put in answer, the current x,y ,
         }
 
-        return result;
-    }
-
-    void trasformBuilding(vector<vector<int>>& buildings, vector<vector<int>>& points)
-    { // negate the point of beginingn
-        for (auto& i : buildings) {
-            points.push_back({ i[0], -i[2] }); // starting index.
-            points.push_back({ i[1], i[2] }); // ending index.
-        }
+        return s.substr(start, end - start + 1);
     }
 };
 /**
- * Main class definition.
+ * Main class definition.`
  */
 int main()
 {
@@ -70,14 +97,8 @@ int main()
     while (t--) {
         string s;
         cin >> s;
-        int target;
-        cin >> target;
 
-        auto input = deserialise2dMatrix<int>(s, 3);
-
-        auto output = solution.getSkyline(input);
-
-        print2dMatrix<int>(output);
+        cout << solution.longestPalindrome(s);
 
         cout << endl;
     }
