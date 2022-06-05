@@ -1,5 +1,15 @@
-#include "libraries/leetcode.h"
+#include "includes/leetcode.h"
 using namespace std;
+
+template <typename T>
+vector<vector<T>> des(string s)
+{
+    string t = s.substr(1, s.size() - 2);
+
+    cout << s;
+
+    return {};
+}
 
 int main()
 {
@@ -14,17 +24,8 @@ int main()
 
     while (t--) {
         string s;
-        vector<vector<char>> input;
-
         cin >> s;
 
-        input = deserialise2dMatrix(s);
-
-        for (int i = 0; i < input.size(); i++) {
-            for (int j = 0; j < input[i].size(); j++) {
-                cout << input[i][j] << ' ';
-            }
             cout << endl;
-        }
     }
 }
