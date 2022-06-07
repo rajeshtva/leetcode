@@ -236,6 +236,11 @@ void printArray(std::vector<T>& array)
     }
     std::cout << std::endl;
 }
+template <typename T>
+void print(T t)
+{
+    std::cout << t << " ";
+}
 
 template <typename T>
 T sanitize(std::string& input)
