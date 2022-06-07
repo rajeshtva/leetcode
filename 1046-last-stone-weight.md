@@ -48,7 +48,7 @@ public:
 
 changes are only in the way we are storing data. we are including each element in the heap(max heap).implemented using priority queue. At every step, inside heap, each element is placed at appropriate position like in vector sorting.
 
-```cpp
+```java
 class Solution {
     public int lastStoneWeight(int[] stones) {
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
