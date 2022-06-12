@@ -247,8 +247,10 @@ T sanitize(std::string& input)
 {
     replace_if(input.begin(), input.end(), isRedundant, ' ');
     trim(input);
-
-    return input;
+    std::istringstream iss(input);
+    T i;
+    iss >> i;
+    return i;
 }
 
 /**
