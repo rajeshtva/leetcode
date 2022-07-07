@@ -1,0 +1,853 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nums",
+				"nums2"
+			],
+			[
+				"const",
+				"__construct"
+			],
+			[
+				"HttpResponse",
+				"HttpResponseNotFound"
+			],
+			[
+				"p",
+				"import"
+			]
+		]
+	},
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"de",
+				"Debugger: Open"
+			],
+			[
+				"debug",
+				"Debugger: Open"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"tosi",
+				"View: Toggle Side Bar"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"build",
+				"Build With: C++ Single File - Run"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"toside",
+				"View: Toggle Side Bar"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"color the",
+				"UI: Select Color Scheme"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"packae",
+				"Package Control: Enable Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"snip",
+				"Snippet: Enumeration"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"full",
+				"View: Toggle Full Screen"
+			],
+			[
+				"th",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"the",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"line",
+				"Permute Lines: Shuffle"
+			],
+			[
+				":line",
+				"Selection: Add Next Line"
+			],
+			[
+				"togg",
+				"View: Toggle Menu"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"rename",
+				"Rename File"
+			],
+			[
+				"term",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"ter",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"termux",
+				"Terminus: Maximize to Tab"
+			],
+			[
+				"termina",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"close a",
+				"File: Close All"
+			],
+			[
+				"z",
+				"Set Syntax: Graphviz (DOT)"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install colo",
+				"Package Control: Install Package"
+			],
+			[
+				"file new",
+				"File: New View into File"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			],
+			[
+				"men",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 228.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rex/rajesh/code/practice/LeetCode/Leetcode.sublime-project",
+		"/home/rex/rajesh/code/practice/LeetCode/output.txt",
+		"/home/rex/rajesh/code/practice/LeetCode/main.cpp",
+		"/home/rex/checking-fb-credentials-on-applovin-server.json",
+		"/home/rex/main.cpp",
+		"/home/rex/main",
+		"/home/rex/a.txt",
+		"/home/rex/.config/Code/Backups/workspaces.json",
+		"/home/rex/.config/Code/User/workspaceStorage/fd9b0c246000bbe2fd735dc4a2ca6786/Gruntfuggly.todo-tree/17xhrywafs.txt",
+		"/home/rex/.config/Code/User/workspaceStorage/fd9b0c246000bbe2fd735dc4a2ca6786/workspace.json",
+		"/home/rex/.config/Code/User/History/-f32b362/entries.json",
+		"/home/rex/.config/Code/User/History/-f861da2/entries.json",
+		"/home/rex/.config/Code/languagepacks.json",
+		"/home/rex/.local/state/mume/katex_config.js",
+		"/home/rex/.local/state/mume/config.json",
+		"/home/rex/rajesh/personal/cronjob.sh",
+		"/home/rex/Downloads/GTP - Mockup.svg",
+		"/home/rex/rajesh/personal/heart.sh",
+		"/home/rex/.bashrc",
+		"/home/rex/cronjob.sh",
+		"/home/rex/something.sh",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/registration.vue",
+		"/home/rex/crontab.sh",
+		"/home/rex/.zshrc",
+		"/home/rex/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/rex/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+		"/home/rex/.fonts/license.txt",
+		"/home/rex/rajesh/code/practice/leetcode/temp.cpp",
+		"/home/rex/rajesh/code/practice/leetcode/helper.cpp",
+		"/home/rex/rajesh/code/practice/jetstream/config/auth.php",
+		"/home/rex/rajesh/code/practice/jetstream/.env",
+		"/home/rex/.aws/credentials",
+		"/home/rex/Downloads/project_internshala/testing.html",
+		"/home/rex/Downloads/project_internshala/index.html",
+		"/home/rex/rajesh/code/grablor-all/backend-copy/vendor/league/flysystem/src/FileExistsException.php",
+		"/home/rex/rajesh/code/grablor-all/backend-copy/src/Templates/GuessThePicture/Services/MopubCredentialService.php",
+		"/home/rex/rajesh/code/grablor-all/appio_backend/app/Console/Commands/ApplovinCredentialGenerationTestCommand.php",
+		"/home/rex/rajesh/code/grablor-all/appio_backend/app/Notifications/ApplovinCredentialJobBatchFailedNotification.php",
+		"/home/rex/rajesh/code/grablor-all/backend-copy/app/Listeners/SendEmailVerificationNotification.php",
+		"/home/rex/rajesh/code/grablor-all/backend-copy/app/Console/Commands/ApplovinCredentialGenerationTestCommand.php",
+		"/home/rex/rajesh/code/grablor-all/backend-copy/app/Http/Resources/UserNotificationResource.php",
+		"/home/rex/rajesh/code/grablor-all/backend-copy/app/Listeners/UpdateUsersParentWallet.php",
+		"/home/rex/rajesh/code/practice/tailwind-v3/src/pages/about1.vue",
+		"/home/rex/rajesh/code/Link to practice/algo/1721-swapping-nodes-in-a-linked-list.cpp",
+		"/home/rex/rajesh/code/practice/jetstream/node_modules/laravel-mix/src/components/JavaScript.js",
+		"/home/rex/rajesh/code/grablor-all/appio_backend/src/Templates/Video/Models/VideoApp.php",
+		"/home/rex/Desktop/main.cpp",
+		"/home/rex/Desktop/main.py",
+		"/home/rex/rajesh/code/practice/jetstream/app/Actions/Jetstream/RemoveTeamMember.php",
+		"/home/rex/rajesh/code/practice/jetstream/app/Models/Team.php",
+		"/home/rex/rajesh/code/practice/django-blog-app/blog/models.py",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/boot/axios.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/store/auth/actions.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/layouts/HomeLayout.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/boot/.gitkeep",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/router/middlewares/isDeveloperNameFilled.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/router/routes.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/verification-success.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/node_modules/enquirer/lib/prompts/password.js",
+		"/home/rex/rajesh/code/practice/django-blog-app/blog/admin.py",
+		"/home/rex/rajesh/code/practice/django-blog-app/blogalaya/urls.py",
+		"/home/rex/rajesh/code/practice/django-blog-app/blog/views.py",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/video-apps/something.py",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/create.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/Home.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/login.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/notifications.vue",
+		"/home/rex/rajesh/code/practice/example-app/laravel/.env",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/boot/echo.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/store/applications/mutations.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/package.json",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/verification-notice.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/store/applications/actions.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/quasar.conf.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/password-reset.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/i18n/en-US/index.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/store/index.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/node_modules/source-map-support/register.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/password-request.vue",
+		"/home/rex/rajesh/code/practice/laravel-vue-razorpay-multiauth/app/Http/Controllers/RazorpayController.php",
+		"/home/rex/rajesh/code/practice/laravel-vue-razorpay-multiauth/routes/web.php",
+		"/home/rex/rajesh/code/practice/laravel-vue-razorpay-multiauth/resources/views/welcome.blade.php",
+		"/home/rex/rajesh/code/practice/laravel-vue-razorpay-multiauth/resources/js/Pages/Dashboard.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/utils/auth.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/wallpaper-app/wallpaper.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/edit.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/components/essential-profile-form.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/components/general-profile-form.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/components/sensitive-profile-form.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/auth/profile.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/wallpaper-app/components/MobileLayout.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/babel.config.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/boot/global-components.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/video-apps/create.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/components/UploadedIcon.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/video-apps/UploadedIcon.vue",
+		"/home/rex/Desktop/Manish-Bhaiya.txt",
+		"/home/rex/rajesh/code/practice/l-9/public/index.php",
+		"/home/rex/rajesh/code/practice/l-9/app/Http/Middleware/VerifyCsrfToken.php",
+		"/home/rex/rajesh/code/practice/l-9/app/Providers/AuthServiceProvider.php",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/playlists/videos.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/components/ErrorMessageList.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/configs/env.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/node_modules/@quasar/app/templates/app/default/component.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/applications/index.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/App.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/error/Error404.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/pages/error/Error500.vue",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/node_modules/quasar/lang/en-US.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/boot/i18n.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/index.html",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/css/app.scss",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/src/utils/helper.js",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/.eslintignore",
+		"/home/rex/rajesh/code/grablor-all/appio_frontend/node_modules/core-js/modules/esnext.async-iterator.constructor.js"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 148.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.742004337649,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.Debugger":
+	{
+		"height": 499.0
+	},
+	"output.Protocol":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 33.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"input",
+				"input.txt"
+			],
+			[
+				"outu",
+				"output.txt"
+			],
+			[
+				"main",
+				"main.cpp"
+			],
+			[
+				"regisvue",
+				"src/pages/auth/registration.vue"
+			],
+			[
+				"fileexis",
+				"vendor/league/flysystem/src/FileExistsException.php"
+			],
+			[
+				"mopub",
+				"src/Templates/GuessThePicture/Services/MopubCredentialService.php"
+			],
+			[
+				"applovincom",
+				"app/Console/Commands/ApplovinCredentialGenerationTestCommand.php"
+			],
+			[
+				"appjob",
+				"app/Notifications/ApplovinCredentialJobBatchFailedNotification.php"
+			],
+			[
+				"applovincommand",
+				"app/Console/Commands/ApplovinCredentialGenerationTestCommand.php"
+			],
+			[
+				"js",
+				"node_modules/laravel-mix/src/components/JavaScript.js"
+			],
+			[
+				"videoapp",
+				"src/Templates/Video/Models/VideoApp.php"
+			],
+			[
+				"models/",
+				"app/Models/Team.php"
+			],
+			[
+				"temp.pp",
+				"temp.cpp"
+			],
+			[
+				"actions.js",
+				"src/store/auth/actions.js"
+			],
+			[
+				"auth.js",
+				"src/utils/auth.js"
+			],
+			[
+				"verifis",
+				"src/pages/auth/verification-success.vue"
+			],
+			[
+				"auth/ac",
+				"src/store/auth/actions.js"
+			],
+			[
+				"appliation/actio",
+				"src/store/applications/actions.js"
+			],
+			[
+				"somthin",
+				"src/pages/applications/video-apps/something.py"
+			],
+			[
+				"homevue",
+				"src/pages/auth/Home.vue"
+			],
+			[
+				"applicationcreate",
+				"src/pages/applications/create.vue"
+			],
+			[
+				"notific",
+				"src/pages/auth/notifications.vue"
+			],
+			[
+				"loginv",
+				"src/pages/auth/login.vue"
+			],
+			[
+				"",
+				".env"
+			],
+			[
+				"applica/muta",
+				"src/store/applications/mutations.js"
+			],
+			[
+				"echo",
+				"src/boot/echo.js"
+			],
+			[
+				"homelay",
+				"src/layouts/HomeLayout.vue"
+			],
+			[
+				"auth/actio",
+				"src/store/auth/actions.js"
+			],
+			[
+				"package.",
+				"package.json"
+			],
+			[
+				"quasar",
+				"quasar.conf.js"
+			],
+			[
+				"verifinot",
+				"src/pages/auth/verification-notice.vue"
+			],
+			[
+				"regist",
+				"node_modules/source-map-support/register.js"
+			],
+			[
+				"enus/in",
+				"src/i18n/en-US/index.js"
+			],
+			[
+				"action",
+				"src/store/auth/actions.js"
+			],
+			[
+				"routes",
+				"src/router/routes.js"
+			],
+			[
+				"actio",
+				"src/store/auth/actions.js"
+			],
+			[
+				"routes.js",
+				"src/router/routes.js"
+			],
+			[
+				"razor",
+				"app/Http/Controllers/RazorpayController.php"
+			],
+			[
+				"welcome.bla",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"web.php",
+				"routes/web.php"
+			],
+			[
+				"DASH",
+				"resources/js/Pages/Dashboard.vue"
+			],
+			[
+				"store/auth",
+				"src/store/auth/actions.js"
+			],
+			[
+				"auth.",
+				"src/utils/auth.js"
+			],
+			[
+				"route",
+				"src/router/routes.js"
+			],
+			[
+				"auth/",
+				"src/pages/auth/registration.vue"
+			],
+			[
+				"wallpaper",
+				"src/pages/applications/wallpaper-app/wallpaper.vue"
+			],
+			[
+				"edit.vue",
+				"src/pages/applications/edit.vue"
+			],
+			[
+				"essentialform",
+				"src/pages/auth/components/essential-profile-form.vue"
+			],
+			[
+				"general-p",
+				"src/pages/auth/components/general-profile-form.vue"
+			],
+			[
+				"enus/",
+				"src/i18n/en-US/index.js"
+			],
+			[
+				"sensi",
+				"src/pages/auth/components/sensitive-profile-form.vue"
+			],
+			[
+				"profile",
+				"src/pages/auth/profile.vue"
+			],
+			[
+				"playlvue",
+				"src/pages/playlists/index.vue"
+			],
+			[
+				"create.vue",
+				"src/pages/applications/create.vue"
+			],
+			[
+				"playlist/act",
+				"src/store/playlists/actions.js"
+			],
+			[
+				"vide",
+				"src/pages/playlists/videos.vue"
+			],
+			[
+				"wallpaper.vue",
+				"src/pages/applications/wallpaper-app/wallpaper.vue"
+			],
+			[
+				"playlist/ac",
+				"src/store/playlists/actions.js"
+			],
+			[
+				"playlist/ind",
+				"src/pages/playlists/index.vue"
+			],
+			[
+				"playlist.vue",
+				"src/pages/playlists/index.vue"
+			],
+			[
+				"wallpapermobil",
+				"src/pages/applications/wallpaper-app/components/MobileLayout.vue"
+			],
+			[
+				"loginvue",
+				"src/pages/auth/login.vue"
+			],
+			[
+				"appli/aciojs",
+				"src/store/applications/actions.js"
+			],
+			[
+				"enus/ind",
+				"src/i18n/en-US/index.js"
+			],
+			[
+				"globalcom",
+				"src/boot/global-components.js"
+			],
+			[
+				"uploadedicon",
+				"src/pages/applications/video-apps/UploadedIcon.vue"
+			],
+			[
+				"video-a/creavue",
+				"src/pages/applications/video-apps/create.vue"
+			],
+			[
+				"video-app/cre",
+				"src/pages/applications/video-apps/create.vue"
+			],
+			[
+				"videos.v",
+				"src/pages/playlists/videos.vue"
+			],
+			[
+				"env.js",
+				"src/configs/env.js"
+			],
+			[
+				"applicaion/i",
+				"src/store/applications/actions.js"
+			],
+			[
+				"error404",
+				"src/pages/error/Error404.vue"
+			],
+			[
+				"applications",
+				"src/store/applications/actions.js"
+			],
+			[
+				"global",
+				"src/boot/global-components.js"
+			],
+			[
+				"home.",
+				"src/pages/auth/Home.vue"
+			],
+			[
+				"enus",
+				"node_modules/quasar/lang/en-US.js"
+			],
+			[
+				"home.vu",
+				"src/pages/auth/Home.vue"
+			],
+			[
+				"routes.",
+				"src/router/routes.js"
+			],
+			[
+				"home.vue",
+				"src/pages/auth/Home.vue"
+			],
+			[
+				"application.js",
+				"src/store/applications/actions.js"
+			],
+			[
+				"home.v",
+				"src/pages/auth/Home.vue"
+			],
+			[
+				"app.vue",
+				"src/App.vue"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 293.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
