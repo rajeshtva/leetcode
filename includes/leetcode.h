@@ -222,7 +222,7 @@ void print2dMatrix(std::vector<std::vector<T>>& matrix)
 {
     for (int i = 0; i < matrix.size(); i++) {
         for (int j = 0; j < matrix[i].size(); j++) {
-            std::cout << matrix[i][j] << " ";
+            std::cout << matrix[i][j] << ", ";
         }
         std::cout << std::endl;
     }
@@ -232,14 +232,14 @@ template <typename T>
 void printArray(std::vector<T>& array)
 {
     for (int i = 0; i < array.size(); i++) {
-        std::cout << array[i] << " ";
+        std::cout << array[i] << ", ";
     }
     std::cout << std::endl;
 }
 template <typename T>
 void print(T t)
 {
-    std::cout << t << " ";
+    std::cout << t << ", ";
 }
 
 template <typename T>

@@ -80,4 +80,6 @@
     "comments": false,
     "strings": false
   },
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.errorSquiggles": "Disabled"
 }
