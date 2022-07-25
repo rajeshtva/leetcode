@@ -2,11 +2,6 @@
 
 [link]()
 **Level**: Medium 
-
-**Memory Use**:   MB
-
-**Time**:  ms
-
 **Explanation**:
 - 
 
