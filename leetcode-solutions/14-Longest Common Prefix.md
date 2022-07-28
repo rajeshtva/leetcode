@@ -12,7 +12,7 @@
 -
 
 **Space complexity**: $O(1)$
-**time complexity**: $O(n.log(k))$, for storing the element, $O(1)$ for getting top element.
+**time complexity**: $O(n^2)$, for storing the element, $O(1)$ for getting top element.
 
 ```cpp
 class Solution {

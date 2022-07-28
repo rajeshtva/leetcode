@@ -2,13 +2,12 @@
 using namespace std;
 
 int main() {
-    vector<string>v = {"/\\","\\/"};
+    vector<int>nums = {5,7,7,8,8,10}; int target = 8;
 
-    for(string &s: v) {
-        for(char ch: s){
-            cout << ch << "";
-        }
-        cout << endl;
-    }
+    auto one = lower_bound(nums.begin(), nums.end(), target);
+    auto two = upper_bound(nums.begin(), nums.end(), target);
+
+    cout << one-nums.begin() << " "<< two-nums.begin() << endl;
+
 
 }
