@@ -3,9 +3,45 @@
 [link](https://leetcode.com/problems/clone-graph)
 **Level**: Medium
 
-**Space complexity**: $O(1)$
-**time complexity**: $O(n * e)$, for storing the element, $O(n)$ for getting top element. auxiliary space of $O(n)$. 
+**Space complexity**: $O(n)$
+**time complexity**: $O(n + e)$, for storing the element, 
  - e is the number of edges. 
+
+- bfs solution 
+```cpp
+class Solution {
+public:
+    Node* cloneGraph(Node* node) {
+        map<Node*,Node*>mp;
+
+        queue<Node*>q;
+        
+        if(node == nullptr) return nullptr;
+
+        Node* answer  = new Node(node->val);
+        mp[node]=answer;
+
+        q.push(node);
+
+        while(!q.empty()) {
+            Node* current = q.front();
+            q.pop();
+
+            for(auto it: current->neighbors) {
+                if(mp.find(it) == mp.end()) {
+                    Node* temp = new Node(it->val);
+                    mp[it] = temp;
+                    q.push(it);
+                }
+
+                mp[current]->neighbors.push_back(mp[it]);
+            }
+        }
+
+        return answer;
+    }
+};
+```
 
 - i did it myself.
 ```cpp
