@@ -229,7 +229,7 @@ void print2dMatrix(std::vector<std::vector<T>>& matrix)
 }
 
 template <typename T>
-void printArray(std::vector<T>& array)
+void print(std::vector<T>& array)
 {
     for (int i = 0; i < array.size(); i++) {
         std::cout << array[i] << ", ";
