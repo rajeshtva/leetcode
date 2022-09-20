@@ -1,13 +1,18 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+
 using namespace std;
+typedef tuple<int, int, int> point;
 
-int main() {
-    vector<int>nums = {5,7,7,8,8,10}; int target = 8;
+class Compare {
+public:
+    bool operator()(point& a, point& b)
+    {
+        return get<2>(a) > get<2>(b);
+    }
+};
 
-    auto one = lower_bound(nums.begin(), nums.end(), target);
-    auto two = upper_bound(nums.begin(), nums.end(), target);
-
-    cout << one-nums.begin() << " "<< two-nums.begin() << endl;
+int main()
+{
 
 
 }

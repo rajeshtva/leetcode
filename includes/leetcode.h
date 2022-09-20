@@ -12,17 +12,17 @@
  **/
 
 // All Typedef's are here.
-typedef long long ll;
-typedef std::vector<ll> vll;
-typedef std::vector<int> vi;
-typedef std::set<int> si;
-typedef std::set<ll> sll;
-typedef vi::iterator viI;
-typedef sll::iterator sllI;
-typedef std::vector<std::string> vs;
-typedef std::pair<int, int> pii;
-typedef std::map<int, int> mii;
-typedef unsigned long long ull;
+// typedef long long ll;
+// typedef std::vector<ll> vll;
+// typedef std::vector<int> vi;
+// typedef std::set<int> si;
+// typedef std::set<ll> sll;
+// typedef vi::iterator viI;
+// typedef sll::iterator sllI;
+// typedef std::vector<std::string> vs;
+// typedef std::pair<int, int> pii;
+// typedef std::map<int, int> mii;
+// typedef unsigned long long ull;
 
 static inline void ltrim(std::string& s);
 static inline void rtrim(std::string& s);
@@ -218,7 +218,7 @@ std::vector<std::vector<T>> deserialise2dMatrix(std::string& serialised, int c, 
 }
 
 template <typename T>
-void print2dMatrix(std::vector<std::vector<T>>& matrix)
+void print(std::vector<std::vector<T>>& matrix)
 {
     for (int i = 0; i < matrix.size(); i++) {
         for (int j = 0; j < matrix[i].size(); j++) {
