@@ -80,6 +80,9 @@
     "comments": false,
     "strings": false
   },
+  "editor.fontWeight": "normal",
+  "editor.lineHeight": 30,
+  "editor.fontSize": 20
   // "C_Cpp.intelliSenseEngine": "Disabled",
   // "C_Cpp.errorSquiggles": "Disabled"
 }

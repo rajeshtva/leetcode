@@ -127,7 +127,7 @@ bool isRedundant(char ch)
 }
 
 template <typename T>
-std::vector<T> deserialise(std::string serialised)
+std::vector<T>deserialize(std::string serialised)
 {
     replace_if(serialised.begin(), serialised.end(), isRedundant, ' ');
     trim(serialised);
@@ -147,7 +147,7 @@ std::vector<T> deserialise(std::string serialised)
  * 2d matrix input only column size
  */
 template <typename T>
-std::vector<std::vector<T>> deserialise2dMatrix(std::string& serialised, int c)
+std::vector<std::vector<T>> deserialize2dMatrix(std::string& serialised, int c)
 {
     replace_if(serialised.begin(), serialised.end(), isRedundant, ' ');
 
@@ -171,7 +171,7 @@ std::vector<std::vector<T>> deserialise2dMatrix(std::string& serialised, int c)
 }
 
 template <typename T>
-std::vector<std::vector<T>> deserialise2dMatrix(std::string s)
+std::vector<std::vector<T>> deserialize2dMatrix(std::string s)
 {
     std::string t = s.substr(1, s.size() - 2);
 
@@ -187,7 +187,7 @@ std::vector<std::vector<T>> deserialise2dMatrix(std::string s)
 
         std::string p = t.substr(beg, end - beg + 1);
 
-        auto d = deserialise<T>(p);
+        auto d = deserialize<T>(p);
 
         output.push_back(d);
     }
@@ -199,7 +199,7 @@ std::vector<std::vector<T>> deserialise2dMatrix(std::string s)
  * 2d matrix both required.
  */
 template <typename T>
-std::vector<std::vector<T>> deserialise2dMatrix(std::string& serialised, int c, int r)
+std::vector<std::vector<T>> deserialize2dMatrix(std::string& serialised, int c, int r)
 {
     replace_if(serialised.begin(), serialised.end(), isRedundant, ' ');
 

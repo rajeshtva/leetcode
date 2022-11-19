@@ -1,18 +1,13 @@
-#include <bits/stdc++.h>
+#include "includes/leetcode.h"
 
 using namespace std;
-typedef tuple<int, int, int> point;
-
-class Compare {
-public:
-    bool operator()(point& a, point& b)
-    {
-        return get<2>(a) > get<2>(b);
-    }
-};
 
 int main()
 {
-
-
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
+    bool a = INT_MIN == -pow(2, 31);
+    cout << a << endl;
 }
