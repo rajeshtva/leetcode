@@ -171,7 +171,7 @@ std::vector<std::vector<T>> deserialize2dMatrix(std::string& serialised, int c)
 }
 
 template <typename T>
-std::vector<std::vector<T>> deserialize2dMatrix(std::string s)
+std::vector<std::vector<T>> deserialize2d(std::string s)
 {
     std::string t = s.substr(1, s.size() - 2);
 
