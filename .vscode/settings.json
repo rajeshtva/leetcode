@@ -81,7 +81,6 @@
     "strings": false
   },
   "editor.fontWeight": "normal",
-  // "C_Cpp.intelliSenseEngine": "Disabled",
-  // "C_Cpp.errorSquiggles": "Disabled"
-  "editor.fontFamily": "cartograph cf",
+  "editor.fontSize": 19,
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace"
 }
