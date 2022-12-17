@@ -35,7 +35,7 @@ int main()
     cin >> t;
     Solution ts;
 
-    cout << to_string('d') << string(1, 'x');
+    cout << (-18 % 5) << endl;
 
     ts.somethin();
 

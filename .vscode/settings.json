@@ -82,5 +82,5 @@
   },
   "editor.fontWeight": "normal",
   "editor.fontSize": 19,
-  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace"
+  // "editor.fontFamily": "jetbrains mono"
 }
