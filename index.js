@@ -1,5 +1,5 @@
-import {readFileSync} from 'fs'
+import { readFileSync } from "fs";
 
-const content = readFileSync('./main.cpp')
+const content = readFileSync("./main.cpp");
 
-console.log(content)
+console.log(content);

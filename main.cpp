@@ -1360,6 +1360,368 @@ public:
     }
 };
 
+class Solution {
+public:
+    vector<bool> checkIfPrerequisite(int n, vector<vector<int>>& prereq, vector<vector<int>>& queries)
+    {
+        vector<vector<int>> adjList(n);
+
+        for (auto it : prereq) {
+            adjList[it[0]].push_back(it[1]);
+        }
+    }
+};
+
+class Solution {
+public:
+    bool winnerSquareGame(int n)
+    {
+    }
+};
+
+class Solution {
+public:
+    int minNumberOperations(vector<int>& target)
+    {
+        int x = 0;
+        int sum = 0;
+
+        for (auto it : target) {
+            if (it > x) {
+                sum += it - x;
+                x = it;
+            }
+
+            return sum;
+        }
+    }
+};
+
+class Solution {
+public:
+    double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start, int end)
+    {
+        double ans = -DBL_MAX;
+        typedef pair<int, double> pd;
+        vector<vector<pd>> adjList(n);
+        vector<double> distance(n, 0);
+
+        for (int i = 0; i < edges.size(); i++) {
+            auto it = edges[i];
+            double cost = succProb[i];
+
+            adjList[it[0]].push_back({ it[1], cost });
+            adjList[it[1]].push_back({ it[0], cost });
+        }
+
+        function<bool(pd&, pd&)> compare = [&](pd& a, pd& b) -> bool {
+            return a.second > b.second;
+        };
+
+        priority_queue<pd, vector<pd>, decltype(compare)> q(compare);
+
+        q.push({ start, 1 });
+        distance[start] = 1;
+
+        while (!q.empty()) {
+            auto node = q.top();
+            q.pop();
+
+            if (node.first == end) {
+                return node.second;
+            }
+
+            for (auto it : adjList[node.first]) {
+                if (node.second * it.second > distance[it.first]) {
+                    distance[it.first] = node.second * it.second;
+                    q.push({ it.first, distance[it.first] });
+                }
+            }
+        }
+
+        return 0;
+    }
+};
+
+class Solution {
+public:
+    int getLengthOfOptimalCompression(string s, int k)
+    {
+        vector<int> temp;
+
+        function<int(string, int)> dfs = [&](string current, int) -> int {
+            if (k == 0) {
+                stack<pair<char, int>> st;
+
+                for (auto it : current) {
+                    if (st.size() && st.top().first == it) {
+                        st.top().second++;
+                    } else {
+                        st.push({ it, 1 });
+                    }
+                }
+
+                int count = 0;
+                while (!st.empty()) {
+                    count++;
+                    st.top().second >= 10 ? count += 2 : count++;
+                    st.pop();
+                }
+
+                return count;
+            }
+        };
+    }
+};
+
+class Solution {
+public:
+    bool validPath(int n, vector<vector<int>>& edges, int source, int end)
+    {
+        vector<vector<int>> adjList(n);
+        vector<bool> visited(n, false);
+
+        for (auto it : edges) {
+            adjList[it[0]].push_back(it[1]);
+            adjList[it[1]].push_back(it[0]);
+        }
+
+        queue<int> q;
+
+        q.push(source);
+        visited[source] = true;
+
+        while (!q.empty()) {
+            int node = q.front();
+            q.pop();
+
+            if (node == end)
+                return true;
+
+            for (auto it : adjList[node]) {
+                if (!visited[it]) {
+                    visited[it] = true;
+                    q.push(it);
+                }
+            }
+        }
+
+        return false;
+    }
+};
+
+class Solution {
+public:
+    int furthestBuilding(vector<int>& heights, int bricks, int ladders)
+    {
+        priority_queue<int> pq;
+        int n = heights.size();
+        pq.push(0);
+        int ans = 0;
+
+        for (int i = 1; i < n; i++) {
+            int diff = heights[i] - heights[i - 1];
+
+            if (diff <= 0)
+                continue;
+
+            if (pq.top() >= diff) {
+            }
+
+            ans = i;
+        }
+    }
+};
+
+class Solution {
+public:
+    vector<int> sumOfDistancesInTree(int n, vector<vector<int>>& edges)
+    {
+        vector<vector<int>> adjList(n);
+        unordered_map<int, unordered_map<int, int>> memo;
+
+        for (auto it : edges) {
+            adjList[it[0]].push_back(it[1]);
+            adjList[it[1]].push_back(it[0]);
+        }
+
+        vector<int> answer(n);
+
+        function<int(int)> f = [&](int current) -> int {
+            vector<int> visited(n, false);
+            queue<int> q;
+            visited[current] = true;
+            q.push(current);
+
+            while (!q.empty()) {
+                int node = q.front();
+                q.pop();
+
+                for (auto it : adjList[node]) {
+                    if (!visited[it]) {
+                        visited[it] = true;
+                        q.push(it);
+                    }
+                }
+            }
+        };
+
+        for (int i = 0; i < n; i++) {
+        }
+    }
+};
+
+class Solution {
+public:
+    vector<long long> lcmAndGcd(long long A, long long B)
+    {
+    }
+};
+
+class Solution {
+public:
+    long long primeProduct(long long L, long long R)
+    {
+        int M = 1e9 + 7;
+        typedef long long ll;
+
+        ll sq = sqrt(R);
+        vector<ll> basePrimes;
+
+        function<void(ll)> findBasePrimes = [&](ll sq) {
+            vector<bool> temp(sq + 1, true);
+            temp[0] = temp[1] = false;
+
+            for (int i = 2; i <= sq; i++) {
+                if (temp[i] == true) {
+                    for (int j = i * 2; j <= sq; j += i) {
+                        temp[j] = false;
+                    }
+                }
+            }
+
+            for (int i = 2; i <= sq; i++) {
+                if (temp[i] == true) {
+                    basePrimes.push_back(i);
+                }
+            }
+        };
+
+        findBasePrimes(sq);
+
+        // finding useful primes.
+        ll maxLength = R - L + 1;
+        vector<bool> primesFlag(maxLength, true);
+
+        for (auto p : basePrimes) {
+            int lowestMultiple = (L / p) * p;
+            if (lowestMultiple < p)
+                lowestMultiple += p;
+
+            for (ll j = lowestMultiple; j <= R; j += p) {
+                primesFlag[j - L] = false;
+            }
+        }
+
+        ll ans = 1;
+
+        for (ll i = 0; i < maxLength; i++) {
+            if (primesFlag[i] == true) {
+                ans = (ans * (i + L)) % M;
+            }
+        }
+
+        return ans;
+    }
+};
+
+class Solution {
+public:
+    vector<int> answerQueries(vector<int>& nums, vector<int>& queries)
+    {
+        int n = nums.size();
+        vector<int> prefixSum(nums.size() + 1, 0);
+        unordered_map<int, int> mp;
+
+        for (int i = 1; i <= n; i++) {
+            prefixSum[i] = prefixSum[i - 1] + nums[i - 1];
+        }
+        int sum;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                sum = prefixSum[i + 1] - prefixSum[j];
+
+                if (mp.count(sum))
+                    mp[sum] = max(mp[sum], abs(i - j + 1));
+                else
+                    mp[sum] = i - j + 1;
+            }
+        }
+
+        vector<int> ans;
+
+        for (auto it : queries) {
+            ans.push_back(mp[it]);
+        }
+
+        return ans;
+    }
+};
+
+class Solution {
+    vector<int> primes;
+
+    void sieve(int sq)
+    {
+        vector<bool> p(sq + 1, true); // including that number also.
+
+        p[0] = false;
+        p[1] = false;
+
+        for (int i = 2; i <= sq; i++) {
+            if (p[i] == true) {
+                this->primes.push_back(i);
+                for (int j = i * 2; j <= sq; j += i) {
+                    p[j] = false;
+                }
+            }
+        }
+    }
+
+    void segmentedSieve(int l, int h)
+    {
+        int sq = sqrt(h);
+
+        vector<int> p(h - l + 1, true);
+
+        sieve(sq);
+
+        for (auto it : primes) {
+            int e = (l / it) * it;
+
+            if (e < l) {
+                e += it;
+            }
+
+            if (e == it) {
+                e += it;
+            }
+
+            for (int j = e; j <= h; j += it) {
+                p[j - l] = false;
+            }
+        }
+
+        vector<int> answer;
+
+        for (int i = l; i <= h; i++) {
+            if (p[i - l]) {
+                answer.push_back(i);
+            }
+        }
+    }
+};
+
 int main()
 {
     int t;

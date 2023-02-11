@@ -1,5 +1,7 @@
 #include "includes/leetcode.h"
 
+#define M = 1E9 + 7;
+
 using namespace std;
 
 typedef long long ll;
@@ -23,7 +25,7 @@ public:
     long long minCost(vector<int>& nums, vector<int>& cost)
     {
         int lowest = *min_element(nums.begin(), nums.end());
-    
+
         int n = nums.size();
         ll INF = 1E12;
         for (int i = 0; i < nums.size(); i++) {
@@ -243,4 +245,3 @@ int main()
         print(output);
     }
 }
-

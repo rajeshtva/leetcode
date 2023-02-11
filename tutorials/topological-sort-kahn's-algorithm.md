@@ -1,6 +1,6 @@
 # Toplogical sort using Queue & indegrees of nodes.(Kahn's Algorithm)
 
-- can only implemented in directed acyclic graph.
+- can only be implemented in directed acyclic graph.
 - first we are calculating indegrees of nodes.
 - then we put in the queues those nodes which have indegree 0.
 - we take first element out of queue
